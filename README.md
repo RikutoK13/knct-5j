@@ -1,7 +1,7 @@
 ## 目次
-git手順[^1]
+<a href="gitコマンド手順">gitでpushする手順</a>
 
-## [^1]gitコマンド手順
+## gitコマンド手順
 ```
 git add -u
 ```
