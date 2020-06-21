@@ -1,3 +1,9 @@
+<details><summary>サンプルコード</summary><div>
+
+\```rb
+puts 'Hello, World'
+\```
+</div></details>
 ## <details><summary>gitコマンド手順</sumarry><div>
 ```
 git add -u
@@ -8,7 +14,7 @@ git commit -m ''
 ```
 git push origin master
 ```
-  </div></details><br>
+  </div></details>
 ## 便利リンク<br> 
 [.gitignoreのサンプルを置いてくれてる(github)](https://github.com/github/gitignore)<br>
 [エンジニアのロードマップがある(github)](https://github.com/kamranahmedse/developer-roadmap)<br>
