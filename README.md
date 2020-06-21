@@ -1,6 +1,6 @@
 ## 目次
-<a href="gitコマンド手順">gitでpushする手順</a>
-
+[gitでpushする手順](#gitコマンド手順)<br>
+[便利なリンク集](#便利リンク)<br>
 ## gitコマンド手順
 ```
 git add -u
