@@ -8,7 +8,7 @@ git commit -m ''
 ```
 git push origin master
 ```
-  </div></detials>
+  </div></details>
 ## 便利リンク<br> 
 [.gitignoreのサンプルを置いてくれてる(github)](https://github.com/github/gitignore)<br>
 [エンジニアのロードマップがある(github)](https://github.com/kamranahmedse/developer-roadmap)<br>
