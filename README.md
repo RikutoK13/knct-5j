@@ -1,4 +1,4 @@
-## <details><summary>gitコマンド手順</sumarry><br>
+## <details><summary>gitコマンド手順</sumarry><div><br>
 ```
 git add -u
 ```
@@ -8,7 +8,7 @@ git commit -m ''
 ```
 git push origin master
 ```
-</detials>
+  </div></detials>
 ## 便利リンク<br> 
 [.gitignoreのサンプルを置いてくれてる(github)](https://github.com/github/gitignore)<br>
 [エンジニアのロードマップがある(github)](https://github.com/kamranahmedse/developer-roadmap)<br>
