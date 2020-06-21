@@ -1,4 +1,4 @@
-## <details><summary>gitコマンド手順</sumarry><div>
+<details><summary>gitコマンド手順</sumarry><div>
 ```
 git add -u
 ```
