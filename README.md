@@ -3,6 +3,9 @@
 [便利なリンク集](#便利リンク)<br>
 ## gitコマンド手順
 ```
+git pull origin master
+```
+```
 git add -u
 ```
 ```
