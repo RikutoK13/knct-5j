@@ -9,7 +9,7 @@ git pull origin master
 git add -u
 ```
 ```
-git commit -m ''
+git commit -m '英語でpushの目的を書く'
 ```
 ```
 git push origin master
