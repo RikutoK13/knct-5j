@@ -1,6 +1,7 @@
 # under myself are quated from .gitignore samples
 # myself/////////////
 .idea
+.eml
 # /////////////myself
 
 # Byte-compiled / optimized / DLL files
