@@ -1,3 +1,7 @@
+# 演習課題では,-1000~1000Hzの周波数をカットした
+# サンプル数882000,間隔は1/44.1kHzなので、0.05ぐらい
+# 0.05*20000点で1000Hz,それを+-0対象にすると-1000~1000Hzぐらい
+
 import wave
 import array
 import numpy as np
@@ -35,7 +39,40 @@ F[N_2 + 15000:-1] = 0
 ## filtered spectrum
 plt.plot(range(len(F)), np.abs(F))
 plt.show()
-# convert to time domain
+
+# high pass filter
+F = np.fft.fft(f)
+F = np.fft.fftshift(F)
+# F[0:N_2 - 15000] = 0
+# F[N_2 + 15000:-1] = 0
+F[N_2-15000:N_2+15000] = 0
+# filtered spectrum
+plt.plot(range(len(F)), np.abs(F))
+plt.show()
+
+# any pass filter (cut loud sound)
+F = np.fft.fft(f)
+F = np.fft.fftshift(F)
+F = np.abs(F)
+F[N_2-20000:N_2+20000] = 0
+# filtered spectrum
+plt.plot(range(len(F)), np.abs(F))
+plt.show()
+
+# any pass filter (cut loud sound)
+F = np.fft.fft(f)
+F = np.fft.fftshift(F)
+F = np.abs(F)
+# F[N_2-15000:N_2+15000] = 0
+wavmax = max(F)
+for times in range((int(end_wav))):
+    if F[times] > wavmax/2:
+        F[times] = 0
+# filtered spectrum
+plt.plot(range(len(F)), np.abs(F))
+plt.show()
+
+# convert to time domain (?what?)
 F = np.fft.fftshift(F)
 f2 = np.fft.ifft(F)
 
