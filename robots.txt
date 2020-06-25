@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /5j_documents
+Disallow: /
