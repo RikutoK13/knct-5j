@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import time
 import sys
 sys.path.append('/path/to/DFT/')
-import DFT  # warningででも無視
+from No5 import DFT
 
 N = [128, 256, 1024, 2048, 4096]
 
