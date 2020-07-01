@@ -1,0 +1,105 @@
+% プリアンブル
+
+%文字の大きさ、用紙の大きさ、段組
+\documentclass[dvipdfmx]{article}
+\bibliographystyle{jplain}
+
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{listings, jlisting}
+
+%表、図の番号形式
+\def\thetable{\thesubsubsection.\arabic{table}}
+\def\thefigure{\thesubsubsection.\arabic{figure}}
+
+%間隔
+\setlength\floatsep{0pt}
+\setlength\textfloatsep{0pt}
+\setlength\intextsep{0pt}
+\setlength\abovecaptionskip{0pt}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+%余白
+\geometry{left=10mm,right=10mm,top=10mm,bottom=15mm}
+
+%画像フォルダの指定
+\graphicspath{{../src/}}
+
+\title{\vspace{-10mm}タイトル}
+\author {名前1 \and 名前2}
+\date {1999/12/31}
+
+\begin{document}
+    %タイトルの出力
+    \maketitle
+
+    \vspace{-15mm}
+    \begin{abstract}
+        うんち!!w
+        \vspace{3mm}
+    \end{abstract}
+
+    \vspace{1mm}
+
+    \section{セクション名}\label{seq:s1}
+    \subsection{サブセクション名}
+    \subsubsection{サブサブセクション名}
+    %表の例
+    \begin{table}[H]%[H]でその場に矯正出力する
+        \begin{flushleft}
+            \caption{表のキャプションは上\label{tb:t1}}
+            \begin{tabular}{|r|r|r|r|r|}  \hline
+            試行 & 段階 & 測定値[kg] & \%MAX & Grading誤差[\%] \\ \hline \hline
+            1.14 & 5.14 & 19.19 & 81.0 & 9.31 \\ \hline
+            893 & 45.45 & 3777 &  & 364364 \\ \hline
+            \end{tabular}
+            \begin{tabular}{|r|r|r|r|} \hline \hline
+            & 段階 & 測定値[kg] & (測定値) - (閾値) \\ \hline \hline
+            & 2001 & 7 & 20 \\ \cline{2-4}
+            & 334 & 301 & 707 \\ \cline{2-4}
+            平均 & 1008 & 1111 & 1783 \\ \cline{2-4}
+            & 40298 & 3000000 & 42582059 \\ \cline{2-4}
+            & 080 & 300.6 & 377.6 \\ \hline
+            \end{tabular}
+            \begin{tabular}{|r|r|} \hline \hline
+            閾値[kg] & 5.5 \\ \hline \hline
+            1強度あたりのグレーディング誤差[\%] & 1145141919 \\ \hline
+            \end{tabular}
+        \end{flushleft}
+    \end{table}
+
+    %図の例
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width = 8cm]{g1.png} %A4, 2段組の場合 width = 8cm が最適, homeDirectory/res/imageFile
+            \caption{図のキャプションは下\label{fig:g1}}
+        \end{center}
+    \end{figure}
+
+    % コードの例
+    \begin{lstlisting}[basicstyle=\ttfamily\footnotesize, frame=single]
+hogehoge
+    \end{lstlisting}
+
+    %数式の例
+    %ちゃんとみせたいやつ
+    \begin{align}
+        \label{eq:e1}
+        (PWC170) = \frac{170 - 96.85}{6.05} \times 10 = 120.90... \simeq 121 [W]\\ %\\で改行
+        (PWC170) = \frac{170 - 96.85}{6.05} \times 10 = 120.90... \simeq 121 [W]
+    \end{align}
+    %文章中のやつ
+    $ 変数x $はどうのこうの
+
+    %本文の例
+    私が取り上げる参考文献\cite{YJ1919}は臭い
+    %空白の改行で新しい段落　
+
+    その調査として用いたデータとして、表\ref{tb:t1}, 図\ref{fig:g1}, 式\ref{eq:e1}, 章節\ref{sec:s1}...\\
+    ああああ %\\で改行
+
+    %参考文献の出力
+    \bibliography{main}
+\end{document}
