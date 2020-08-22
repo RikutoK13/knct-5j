@@ -8,7 +8,7 @@ import numpy as np
 ary = np.array([[2.0, 3.0, 4.0],
                    [3.0, 5.0, 2.0],
                    [4.0, 3.0, 30.0]])
-ans = [6.0, 5.0, 32.0]
+ans = [6.0, 5.0, 32.0]  #
 
 def main():
     del_times = 0
