@@ -9,7 +9,7 @@ def test_jacobi():
     in_y = 0
     in_z = 0
 
-    accuracy = 10
+    accuracy = 20
 
     a = [[7, 1, 2],
          [1, 8, 3],
@@ -47,7 +47,7 @@ def test_jacobi():
     row = list(range(n+1))
     plt.plot(row, x, label='Jacobi method')
     plt.plot(row, a, label='Gauss=Seidel method')
-    plt.text(6.5, 0.2, 'initial value[x:{} y:{} z:{}]'.format(in_x, in_y, in_z))
+    plt.text(9.5, 1.0, 'initial value[x:{} y:{} z:{}]'.format(in_x, in_y, in_z))
     plt.xlabel('num of calc')
     plt.ylabel('value of x')
     # plt.plot(n, y)
