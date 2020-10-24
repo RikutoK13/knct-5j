@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc lib5j_c.a  CMakeFiles/5j_c.dir/library.c.obj CMakeFiles/5j_c.dir/old_dice.c.obj CMakeFiles/5j_c.dir/singou.c.obj CMakeFiles/5j_c.dir/2015tsukuba.c.obj CMakeFiles/5j_c.dir/2016tsukuba.c.obj CMakeFiles/5j_c.dir/dice.c.obj CMakeFiles/5j_c.dir/check.c.obj CMakeFiles/5j_c.dir/2017tsukuba1.c.obj
-C:\MinGW\bin\ranlib.exe lib5j_c.a

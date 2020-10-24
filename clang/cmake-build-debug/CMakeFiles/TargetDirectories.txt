@@ -1,3 +1,0 @@
-C:/Users/user/1workspace/knct-5j/5j_c/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/user/1workspace/knct-5j/5j_c/cmake-build-debug/CMakeFiles/5j_c.dir
-C:/Users/user/1workspace/knct-5j/5j_c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
