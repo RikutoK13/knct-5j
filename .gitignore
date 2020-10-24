@@ -1,8 +1,10 @@
-# under myself are quated from .gitignore samples
-# myself/////////////
-.idea
-.eml
-# /////////////myself
+# 
+PDF/
+docs/
+images/
+*.lnk
+*.eml
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
