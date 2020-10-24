@@ -4,6 +4,7 @@ docs/
 images/
 *.lnk
 *.eml
+.idea
 
 
 # Byte-compiled / optimized / DLL files
