@@ -1,14 +1,13 @@
-# 3*3のみ対応
-
 from matplotlib import pyplot as plt
 
 
 def test_jacobi():
-
+    # x, y, zの初期値
     in_x = 0
     in_y = 0
     in_z = 0
 
+    # 計算回数
     accuracy = 20
 
     a = [[7, 1, 2],
@@ -88,3 +87,4 @@ def gauss_seidel(matrix, vector, accuracy, in_x=0, in_y=0, in_z=0):
 
 if __name__ == "__main__":
     test_jacobi()
+
